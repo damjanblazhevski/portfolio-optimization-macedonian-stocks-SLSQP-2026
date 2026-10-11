@@ -41,42 +41,42 @@ The SLSQP optimization produced the following portfolio weights:
 
 | Stock   | Weight |
 |---------|--------|
-| Replek  | 28%    |
+| Replek  | 43.62%   |
 | TTK     | 0%     |
-| Makstil | 45%    |
-| Tikves  | 24%    |
-| Okta    | 3%     |
+| Makstil | 20.83%  |
+| Tikves  | 35.55%   |
+| Okta    | 0%     |
 
 An equally weighted portfolio was also constructed to provide a benchmark for evaluating the optimized portfolio.
 
 | Stock   | SLSQP Weights| Equal weights| 
 |---------|--------|--------|
-| Replek  | 28%    | 20%    |
+| Replek  | 43.62%    | 20%    |
 | TTK     | 0%     | 20%    |
-| Makstil | 45%    | 20%    |
-| Tikves  | 24%    | 20%    |
+| Makstil | 20.83%    | 20%    |
+| Tikves  | 35.55%    | 20%    |
 | Okta    | 3%     | 20%    |
 
-| Portfolio | Returns(Annualized) | Return/Risk |
+| Portfolio | Returns(Annualized) | Return/Risk(Annualized) |
 |-----------|---------|-------------|
-| SLSQP     | 10,53%  | 1,1         |
+| SLSQP     | 14,9%  | 1,25         |
 | Equal     | 11%     | 0,85        |
 | Stock Index| 18,6%  | 1,64        |
 
 | Portfolio           | Q1     | Q3    | VaR    |
 |---------------------|--------|-------|--------|
-| MBI-10              | -0.99% | 7.22% | -1.93% |
-| Equal Weights       | -1.02% | 2.00% | -2.80% |
-| SLSQP               | -0.17% | 5.71% | -2.83% |
+| MBI-10              | -0.99% | 2.95% | -1.93% |
+| Equal Weights       | -1.02% | 1.99% | -2.82% |
+| SLSQP               | -0.53% | 2.42% | -2.94% |
 
 The hypothetical returns of the portfolios are calculated using the already available historical data. 
 
 
 | Portfolio      | USD Profit (Cumulative) | Drawdown | Cumulative Performance | 
 |----------------|------------------------:|---------:|-----------------------:|
-| MBI-10         | ~$544                   | -2.3%    | 54.4%                  |
-| Equal Weights  | ~$322                   | -7.8%    | 32.23%                 |
-| SLSQP          | ~$307                   | -7.0%    | 30.71%                 |
+| MBI-10         | ~$723                   | -7.23%    | 72.32%                  |
+| Equal Weights  | ~$380                   | -10.9%    | 38%                 |
+| SLSQP          | ~$544                   | -8.37%    | 54.45%                 |
 
 
 ## Conclusion
