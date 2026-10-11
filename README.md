@@ -7,8 +7,7 @@ The analysis was made using 36 individual stock-price observations resulting in 
 
 The SLSQP derived portfolio weights portfolio performance was compared to a "Naive Portfolio"(equally weighted portfolio) as well as the MBI-10 benchmark index. 
 
-Another aspect was also taken into consideration regarding the treatment of the extreme outliers during the calculation of the stock beta coefficients. A hypothesis was made that the usage of a 
-Huber M-Estimator would yield more accurate and statistically significant beta-coefficients, which was later determined to yield no different results than the regular OLS regression. 
+The project also examined the treatment of extreme observations when estimating stock beta coefficients. Huber M-estimator robust regressions were compared with OLS regressions to assess the sensitivity of the estimated coefficients to outliers. In this sample, the results were similar between the two methods.
 
 An out of sample test wasn't made due to very limited stock activity in the following months after the optimization was done, therefore leaving historical data as the only benchmark for hypothetical 
 performance tracking. **The project will be updated in the future for an adequate out of sample test!**
@@ -18,8 +17,8 @@ performance tracking. **The project will be updated in the future for an adequat
 - Log returns
 - Correlation analysis
 - Value at Risk (VaR)
-- Return/Risk Metric as objective
-- Constrained SLSQP optimization
+- Return/Risk Metric as objective - Assuming a non-existent risk free rate due to model simplicity
+- Constrained SLSQP optimization - Each of the stocks' weights may be a maximum of 45% of the portfolio
 - MBI10 benchmark comparison
 - Drawdown graph
 - Cumulative performances graph
@@ -55,13 +54,16 @@ An equally weighted portfolio was also constructed to provide a benchmark for ev
 | TTK     | 0%     | 20%    |
 | Makstil | 20.83%    | 20%    |
 | Tikves  | 35.55%    | 20%    |
-| Okta    | 3%     | 20%    |
+| Okta    | 0%     | 20%    |
 
 | Portfolio | Returns(Annualized) | Return/Risk(Annualized) |
 |-----------|---------|-------------|
 | SLSQP     | 14,9%  | 1,25         |
 | Equal     | 11%     | 0,85        |
-| Stock Index| 18,6%  | 1,64        |
+| MBI-10 | 18,6%  | 1,64        |
+
+*_Risk-free rate is assumed to be zero_
+** _(Mean Monthly Return / Monthly Deviation)*sqrt(12)_
 
 | Portfolio           | Q1     | Q3    | VaR    |
 |---------------------|--------|-------|--------|
